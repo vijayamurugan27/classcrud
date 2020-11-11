@@ -1,0 +1,13 @@
+<form method = "post">  
+
+{% csrf_token %}
+<p>Are you sure you want to delete this file? <br>
+Shop.No:{{ object.id }}<br>
+Shop.Title:{{ object.title }}<br>
+Shop Description :{{ object.description }}<br>
+Shop.Owner :{{ object.Owner }}<br>
+
+
+</p>
+	<input type="submit" value = "comfirm">
+</form>
